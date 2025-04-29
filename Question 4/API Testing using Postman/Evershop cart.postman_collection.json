@@ -1,0 +1,43 @@
+{
+	"info": {
+		"_postman_id": "1b8ea5c9-fff8-4195-8e0f-23e0a99318a1",
+		"name": "Evershop cart",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42850858"
+	},
+	"item": [
+		{
+			"name": "Cart Verify",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sku\": \"NJC48508-Green-X\",\r\n    \"qty\": \"3\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "https://demo.evershop.io/api/cart/mine/items",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"evershop",
+						"io"
+					],
+					"path": [
+						"api",
+						"cart",
+						"mine",
+						"items"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
